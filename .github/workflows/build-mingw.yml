@@ -56,8 +56,7 @@ jobs:
             -DBUILD_SHARED_LIBS=OFF ^
             -DSENTRY_BUILD_TESTS=OFF ^
             -DSENTRY_BUILD_EXAMPLES=OFF ^
-            -DSENTRY_TRANSPORT="winhttp" ^            
-            -DSENTRY_BUILD_SHARED_LIBS=OFF ^
+            -DSENTRY_TRANSPORT=winhttp ^
             -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" -B./cmake-build &&^
             cd cmake-build && cmake --build . && cmake --install . 
             
